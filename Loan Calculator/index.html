@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Loan Calculator</title>
+</head>
+<body>
+    <div id="container">
+        <div class="card">
+            <div class="upperSection" action="submit">
+                <form id = "mainInput">
+                    <h1>Loan Calculator</h1>
+                    <div class="inputRow">
+                        <span class="add-on">$</span>
+                        <input type="number"placeholder="Loan Amount"class="input" id ="amount" required>
+                    </div>    
+                    <div class="inputRow">
+                        <span class="add-on">%</span>
+                        <input type="number"placeholder="Interest"class="input" id ="interest"required>
+                    </div> 
+                        <input type="number"placeholder="Years To Repay"class="input"id="repay" required>
+                    <button class="calc">Calculate</button>
+                </form>
+            </div>
+            <div id="loader">
+                <img src="loading.gif" alt="" srcset="">
+            </div>
+            <div class="lowerSection">
+                <h2>Results</h2>
+                <form>
+                    <div class="inputRow">
+                        <span class="add-on">TotalPayment</span>
+                        <input type="number"class="input result"id ="totalPayment"disabled >
+                    </div>
+                    <div class="inputRow" >
+                        <span class="add-on">MonthlyPayment</span>
+                        <input type="number"class="input result"id ="monthlyPayment" disabled>
+                    </div>
+                    <div class="inputRow">
+                        <span class="add-on">Total Interest</span>
+                        <input type="number"class="input result"id ="totalInterest" disabled>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
