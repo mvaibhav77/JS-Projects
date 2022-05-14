@@ -1,0 +1,199 @@
+
+body{
+    display: block;
+    margin:0;
+    line-height: 1.5;
+    font-family: "Roboto", sans-serif;
+    color: rgba(0,0,0,0.87);
+    background-color: thistle;
+}
+#container{
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 90%;
+    padding-top: 1em;
+    /* border: 0.7px solid rgb(228, 228, 228); */
+    border-top:none;
+    border-radius: 2px;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%),
+                0 1px 5px 0 rgb(0 0 0 / 12%),
+                0 3px 1px -2px rgb(0 0 0 / 20%);
+}
+.mainSection{
+    background-color: blanchedalmond;
+    display: grid;
+    grid-area: 
+      "upperSection"
+      "lowerSection";
+    /* grid-row-gap: 1em; */
+}
+.upperSection{
+    display: block;
+    line-height: 32px;
+    margin-bottom: 8px;
+    padding: 1.5em;
+    border-bottom: 1px solid rgb(228, 223, 223);
+}
+#upperHeader{
+    font-size: 24px;
+    font-weight: 100px;
+}
+.inputField{
+    width:auto;
+}
+form {
+    display: block;
+    margin-right: 1em;
+    margin-top: 0em;
+    line-height: 1;
+}
+  /* .active{
+    padding:1em;
+    padding-left: 0pt;
+    font-size: 11px;
+    color:rgba(155, 155, 155, 0.87);
+    font-weight: 100;
+  } */
+.active{
+    margin-top: 1.5rem;
+    /* z-index: 1; */
+    padding:0;
+    font-size: 15px;
+    color:rgba(155, 155, 155, 0.87);
+    font-weight: 100;
+    /* float:left; */
+    /* overflow: auto; */
+}
+#topLabel{
+    padding-top: 0.5em;
+}
+.input{
+    position: relative;
+    top:-25px;
+    margin-top: 0;
+    /* display: block; */
+    padding-bottom: 0%;
+    padding-top: 0;
+    /* background-color: blanchedalmond; */
+    background: transparent;
+    font-size: 15px;
+    width:100%;
+    padding: 0.7em;
+    padding-left: 0;
+    /* margin-top: 3px; */
+    margin-bottom: 3px;
+    border: none;
+    border-radius: 3px;
+    border-bottom:1px solid rgba(155, 155, 155, 0.87);
+
+}.input:focus{
+    outline: 0;
+    border-bottom: 1px solid #26a69a;
+    box-shadow: 0 1px 0 0 #2ec3b4; 
+}
+#addTask{
+    margin-top: 2em;
+    padding:0.65em 1.8em 0.65em 1.8em;
+    text-decoration: none;
+    font-size: 1rem;
+    outline: 0;
+    color: #fff;
+    background-color: #26a69a;
+    text-align: center;
+    letter-spacing: .5px;
+    cursor: pointer;
+    border: initial;
+    border-radius: 3px;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 
+                0 1px 5px 0 rgb(0 0 0 / 12%),
+                0 3px 1px -2px rgb(0 0 0 / 20%);
+    transition-property:all;
+    transition-duration: 0.3s ;
+}
+#addTask:hover{
+    background-color: #33c5c5;
+    box-shadow: 0 1px 0 0 #2ab1a3;
+    border-image: initial; 
+}
+.lowerSection{
+    display: block;
+    line-height: 32px;
+    margin-bottom: 14px;
+    padding: 1.5em;
+    padding-bottom: 0;
+}
+#lowerHeader{
+    font-size: 24px;
+    font-weight: 100px;
+}
+#listTask{
+    display: flex;
+    flex-direction: column;
+}
+#filter{
+      padding-bottom: 0%;
+}
+#filterInput{
+      margin-top: 0%;
+      padding-top: 0;
+}
+.list-item{
+    align-content: center;
+    display: block;
+    font-size: 14px;
+    border:1px solid rgba(160,160,160,0.2);
+    box-shadow: 0 0 1px 0 rgb(0 0 0 / 14%), 
+    0 0 1px 0 rgb(0 0 0 / 12%),
+    0 0 1px -2px rgb(0 0 0 / 20%);
+    border-bottom:0 ;
+    padding: 0.3em;
+    padding-left: 1.5em;
+}
+.list-item:first-child{
+    border-radius: 0 0 2px 2px;
+}
+.list-item:last-child{
+    border-bottom:1px solid rgba(160,160,160,0.2);
+    border-radius: 0 0 2px 2px;
+}
+.del-item{
+    display: block;
+    float:right;
+    padding:0;
+    margin-right: 3em;
+}
+.del-item img,.del-item img:active{
+    height: 15px;
+    width: 15px;
+}
+.del-item img:hover{
+    height: 17px;
+    width: 17px;  
+}
+.del-item img:active{
+    height: 15px;
+    width: 15px;  
+}
+  
+#clear-items{
+    background-color: #000;
+    margin-top: 1em;
+    font-size: 0.8rem;
+    padding:0.7em 2em 0.7em 2em;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    letter-spacing: .5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 2px;
+    display: inline-block;
+    height: 36px;
+    text-transform: uppercase;
+}
+
+  
+  
+  
+  
+  
